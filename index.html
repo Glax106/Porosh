@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Porosh — First Bangladeshi Creator in MrBeast Gaming</title>
+<meta name="description" content="Porosh — Bangladeshi gaming creator, first from Bangladesh to compete in a MrBeast Gaming event for $25,000." />
+
+<!-- Type system: Anton (heavy display), Space Grotesk (body/UI), IBM Plex Mono (labels/eyebrows) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Butcherman&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ============ GRID / AMBIENT BACKDROP ============ -->
+<div class="backdrop" aria-hidden="true">
+  <div class="backdrop__grid"></div>
+  <div class="backdrop__glow backdrop__glow--a"></div>
+  <div class="backdrop__glow backdrop__glow--b"></div>
+</div>
+
+<!-- ============ PRELOADER ============ -->
+<div id="preloader" class="preloader">
+  <div class="preloader__panel preloader__panel--left"></div>
+  <div class="preloader__panel preloader__panel--right"></div>
+
+  <div class="preloader__stage">
+    <div class="laser-rain" id="laserRain" aria-hidden="true"></div>
+
+    <div class="preloader__wordmark">
+      <h1 class="preloader__word">POROSH</h1>
+      <span class="blood-drip blood-drip--1" aria-hidden="true"></span>
+      <span class="blood-drip blood-drip--2" aria-hidden="true"></span>
+      <span class="blood-drip blood-drip--3" aria-hidden="true"></span>
+      <span class="blood-drip blood-drip--4" aria-hidden="true"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <a href="#top" class="brand-mark">P<span class="brand-mark__dot">.</span></a>
+  <a class="header-cta" href="https://youtube.com/@poroshyt?sub_confirmation=1" target="_blank" rel="noopener">Subscribe</a>
+</header>
+
+<main id="top">
+
+  <!-- ============ SECTION 1 — HERO & PROFILE ============ -->
+  <section class="hero" id="profile">
+    <div class="hero__inner">
+
+      <div class="avatar reveal" data-reveal>
+        <div class="avatar__ring"></div>
+        <div class="avatar__frame">
+          <img
+            class="avatar__img"
+            src="assets/avatar.jpg"
+            alt="Porosh — channel avatar"
+            onerror="this.style.opacity=0"
+          />
+          <span class="avatar__fallback" aria-hidden="true">P</span>
+        </div>
+      </div>
+
+      <p class="eyebrow reveal" data-reveal>@poroshyt  ·  content creator</p>
+
+      <h2 class="hero__headline reveal" data-reveal>
+        Local Nights to<br />
+        Global Stages.
+      </h2>
+
+      <p class="hero__bio reveal" data-reveal>
+    Content creation built on pure adrenaline, unscripted moments, and high-stakes gameplay. 
+      </p>
+
+      <div class="badge reveal" data-reveal>
+        <span class="badge__icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 3h12v4a6 6 0 0 1-6 6 6 6 0 0 1-6-6V3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 5H3v2a4 4 0 0 0 4 4M18 5h3v2a4 4 0 0 1-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M12 13v4M8 21h8M9.5 17h5l.6 4h-6.2l.6-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="badge__text">First Bangladeshi Person To Compete in MrBeast Gaming</span>
+      </div>
+
+      <div class="hero__ctas reveal" data-reveal>
+        <a href="#spotlight" class="btn-solid">Watch the $250K run</a>
+        <a href="https://youtube.com/@poroshyt?si=t6dv105umnr1rOKt" target="_blank" rel="noopener" class="btn-line">Visit Channel</a>
+      </div>
+    </div>
+
+    <a href="#spotlight" class="scroll-cue" aria-label="Scroll down">
+      <span class="scroll-cue__track"><span class="scroll-cue__dot"></span></span>
+    </a>
+  </section>
+
+  <!-- ============ SECTION 2 — FEATURED VIDEO ============ -->
+  <section class="spotlight" id="spotlight">
+    <div class="spotlight__head">
+      <p class="eyebrow reveal" data-reveal>the moment</p>
+      <h2 class="spotlight__title reveal" data-reveal>
+        Competing for $25,000<br class="hide-mobile" /> in a MrBeast Gaming event.
+      </h2>
+      <p class="spotlight__desc reveal" data-reveal>
+        The video that made history &mdash; Porosh stepped into the arena as
+        the first creator from Bangladesh to compete in a MrBeast Gaming
+        challenge, going head to head for a $25,000 prize on the world's
+        biggest stage.
+      </p>
+    </div>
+
+    <div class="video-card reveal" data-reveal id="video-card">
+      <div class="video-card__frame" id="video-frame">
+        <img id="video-thumb" class="video-card__thumb" src="" alt="" />
+        <button class="video-card__play" id="video-play-btn" aria-label="Play video">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7-11-7Z"/></svg>
+        </button>
+        <div class="video-card__scan" aria-hidden="true"></div>
+      </div>
+      <div class="video-card__meta">
+        <span class="video-card__title" id="video-title">Loading the clip&hellip;</span>
+        <a class="video-card__link" id="video-yt-link" href="https://youtube.com/@poroshyt?si=t6dv105umnr1rOKt" target="_blank" rel="noopener">Open on YouTube &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 3 — SOCIAL LINKS / FOOTER ============ -->
+  <footer class="social-footer" id="connect">
+    <p class="eyebrow reveal" data-reveal>find him elsewhere</p>
+    <h2 class="social-footer__title reveal" data-reveal>Stay in the loop.</h2>
+
+    <div class="social-grid reveal" data-reveal>
+
+      <a href="https://www.instagram.com/porosh.fr" target="_blank" rel="noopener" class="social-icon" data-social="instagram" aria-label="Instagram">
+        <span class="social-icon__glow"></span>
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" class="social-icon__mono">
+          <rect x="2.5" y="2.5" width="19" height="19" rx="6" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="12" cy="12" r="4.6" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="17.6" cy="6.4" r="1.15" fill="currentColor"/>
+        </svg>
+        <svg width="26" height="26" viewBox="0 0 24 24" class="social-icon__brand">
+          <defs>
+            <linearGradient id="igGradient" x1="0" y1="24" x2="24" y2="0" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#FEDA75"/>
+              <stop offset="0.35" stop-color="#D62976"/>
+              <stop offset="0.65" stop-color="#962FBF"/>
+              <stop offset="1" stop-color="#4F5BD5"/>
+            </linearGradient>
+          </defs>
+          <rect x="2.5" y="2.5" width="19" height="19" rx="6" stroke="url(#igGradient)" stroke-width="1.8" fill="none"/>
+          <circle cx="12" cy="12" r="4.6" stroke="url(#igGradient)" stroke-width="1.8" fill="none"/>
+          <circle cx="17.6" cy="6.4" r="1.25" fill="url(#igGradient)"/>
+        </svg>
+        <span class="social-icon__label">Instagram</span>
+      </a>
+
+      <a href="https://youtube.com/@poroshyt?si=t6dv105umnr1rOKt" target="_blank" rel="noopener" class="social-icon" data-social="youtube" aria-label="YouTube">
+        <span class="social-icon__glow"></span>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" class="social-icon__mono"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.4 3.5 12 3.5 12 3.5s-7.4 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c2 .6 9.4.6 9.4.6s7.4 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8ZM9.6 15.5v-7l6.3 3.5-6.3 3.5Z" stroke="currentColor" stroke-width="0.4" fill="currentColor"/></svg>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#FF0000" class="social-icon__brand"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.4 3.5 12 3.5 12 3.5s-7.4 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c2 .6 9.4.6 9.4.6s7.4 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8ZM9.6 15.5v-7l6.3 3.5-6.3 3.5Z"/></svg>
+        <span class="social-icon__label">YouTube</span>
+      </a>
+
+      <a href="#" target="_blank" rel="noopener" class="social-icon" data-social="x" aria-label="X (Twitter)">
+        <span class="social-icon__glow"></span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="social-icon__mono"><path d="M18.3 2H21l-6.6 7.5L22.2 22h-6.9l-5.4-7-6.2 7H1l7-8-8.2-11.5H7l4.9 6.5L18.3 2Zm-1.2 18h1.9L7 4H5l12.1 16Z"/></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" class="social-icon__brand"><path d="M18.3 2H21l-6.6 7.5L22.2 22h-6.9l-5.4-7-6.2 7H1l7-8-8.2-11.5H7l4.9 6.5L18.3 2Zm-1.2 18h1.9L7 4H5l12.1 16Z"/></svg>
+        <span class="social-icon__label">X</span>
+      </a>
+
+      <a href="https://discord.gg/QRuWsr2fXS" target="_blank" rel="noopener" class="social-icon" data-social="discord" aria-label="Discord">
+        <span class="social-icon__glow"></span>
+        <svg width="27" height="27" viewBox="0 0 24 24" fill="currentColor" class="social-icon__mono"><path d="M20.3 5.4A17.6 17.6 0 0 0 15.9 4c-.2.4-.4.9-.6 1.3a16.3 16.3 0 0 0-6.6 0c-.2-.4-.4-.9-.6-1.3-1.5.3-3 .8-4.4 1.4C1 9.8.3 14.1.6 18.3a17.7 17.7 0 0 0 5.3 2.7c.4-.6.8-1.2 1.1-1.9a11 11 0 0 1-1.8-.9l.4-.3a12.6 12.6 0 0 0 10.8 0l.4.3c-.6.3-1.2.6-1.8.9.3.7.7 1.3 1.1 1.9a17.6 17.6 0 0 0 5.3-2.7c.4-4.9-.8-9.1-3.1-12.9ZM8.7 15.8c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.9.9 1.8 2c0 1.1-.8 2-1.8 2Zm6.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.9.9 1.8 2c0 1.1-.8 2-1.8 2Z"/></svg>
+        <svg width="27" height="27" viewBox="0 0 24 24" fill="#5865F2" class="social-icon__brand"><path d="M20.3 5.4A17.6 17.6 0 0 0 15.9 4c-.2.4-.4.9-.6 1.3a16.3 16.3 0 0 0-6.6 0c-.2-.4-.4-.9-.6-1.3-1.5.3-3 .8-4.4 1.4C1 9.8.3 14.1.6 18.3a17.7 17.7 0 0 0 5.3 2.7c.4-.6.8-1.2 1.1-1.9a11 11 0 0 1-1.8-.9l.4-.3a12.6 12.6 0 0 0 10.8 0l.4.3c-.6.3-1.2.6-1.8.9.3.7.7 1.3 1.1 1.9a17.6 17.6 0 0 0 5.3-2.7c.4-4.9-.8-9.1-3.1-12.9ZM8.7 15.8c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.9.9 1.8 2c0 1.1-.8 2-1.8 2Zm6.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.9.9 1.8 2c0 1.1-.8 2-1.8 2Z"/></svg>
+        <span class="social-icon__label">Discord</span>
+      </a>
+
+    </div>
+
+    <div class="social-footer__bottom">
+      <span>&copy; <span id="year"></span> Porosh</span>
+      <span class="dot-sep">&middot;</span>
+      <span>Built frame by frame, not from a template.</span>
+    </div>
+  </footer>
+
+</main>
+
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script src="js/preloader.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
