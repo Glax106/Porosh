@@ -1,0 +1,3 @@
+Drop the real channel avatar here as "avatar.jpg" (square image, at least 256x256px).
+Until then, the circular ring shows a crimson "P" monogram fallback automatically —
+nothing breaks if this file is missing.
